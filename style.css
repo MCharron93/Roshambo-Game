@@ -2,3 +2,7 @@ body { min-height: 100vh; display: flex; flex-direction: column; }
 header{ height: 8vh;} 
 main{flex-grow: 1;} 
 footer{ height: 8vh;}
+
+* {
+  outline: 1px solid grey;
+}
