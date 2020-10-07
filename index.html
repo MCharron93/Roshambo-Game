@@ -21,26 +21,36 @@
 
 
   <main class="container-fluid">
-<div class="row justify-content-around">
-  <div class="col-3 text-center">
-    <h3>Rock</h3>
-    <button class="btn btn-primary" onclick="play('rock')">Select</button>
-  </div>
-  <div class="col-3 text-center">
-    <h3>Paper</h3>
-    <button class="btn btn-warning" onclick="play('paper')">Select</button>
-  </div>
-  <div class="col-3 text-center">
-    <h3>Scissors</h3>
-    <button class="btn btn-success" onclick="play('scissors')">Select</button>
-  </div>
-</div>
+    <div class="row justify-content-around">
+      <div class="p-3">
+        <div id="playArea" class="col-4 text-center">
+          <h3 id="comp-play">Computer</h3>
+        </div>
+        <div id="playArea" class="col-4 text-center">
+          <h3 id="your-play">Here</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col-3 text-center">
+        <h3>Rock</h3>
+        <button class="btn btn-primary" onclick="play('rock')">Select</button>
+      </div>
+      <div class="col-3 text-center">
+        <h3>Paper</h3>
+        <button class="btn btn-warning" onclick="play('paper')">Select</button>
+      </div>
+      <div class="col-3 text-center">
+        <h3>Scissors</h3>
+        <button class="btn btn-success" onclick="play('scissors')">Select</button>
+      </div>
+    </div>
   </main>
 
 
   <footer class="row text-center">
-      <div class="col-12 bg-info">
-        <h2>Who will win? A true test of the odds!</h2>
+    <div class="col-12 bg-info">
+      <h2>Who will win? A true test of the odds!</h2>
     </div>
   </footer>
 

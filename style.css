@@ -6,3 +6,8 @@ footer{ height: 8vh;}
 * {
   outline: 1px solid grey;
 }
+
+#playArea{
+  border: black;
+  color: blue;
+}
