@@ -1,13 +1,29 @@
 body { min-height: 100vh; display: flex; flex-direction: column; }
 header{ height: 8vh;} 
-main{flex-grow: 1;} 
+main{flex-grow: 1; background-color: ;} 
 footer{ height: 8vh;}
 
-* {
-  outline: 1px solid grey;
+
+.rock-bg{
+  background-image: url(rock.png);
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-#playArea{
-  border: black;
-  color: blue;
+.scissor-bg{
+  background-image: url(scissors.jpg);
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
+}
+
+.paper-bg{
+  background-image: url(paper_attack.jpg);
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
 }

@@ -4,7 +4,7 @@ let compArray = [{ name: "rock" }, { name: "paper" }, { name: "scissors" }]
 function play(playerChoice) {
   let generateRandom = compRandomChoice()
   let compChoice = compArray[generateRandom].name
-  console.log('computer choose: ', compChoice)
+  document.getElementById("comp-play").innerHTML = compChoice
 
 
   if (playerChoice == 'rock') {
@@ -16,27 +16,29 @@ function play(playerChoice) {
   }
 }
 
+let results = ""
+
 function compareChoice(choice, comp) {
 
   if (choice == comp) {
-    console.log('its a tie')
+    results = 'its a tie'
   } else if (choice == 'paper' && comp == 'rock') {
-    drawPlay()
-    console.log('paper beats rock')
+    results = "Your paper beats Computer's rock"
   } else if (choice == 'scissors' && comp == 'rock') {
-    console.log('rock beats scissors')
+    results = "Your rock beats Computer's scissors"
   } else if (choice == 'rock' && comp == 'paper') {
-    console.log('paper beats rock')
+    results = "Your paper beats Computer's rock"
   } else if (choice == 'scissor' && comp == 'paper') {
-    console.log('scissors beats paper')
+    results = "Your scissors beats Computer's paper"
   } else if (choice == 'rock' && comp == 'scissors') {
-    console.log('rock beats scissors')
+    results = "Your rock beats Computer's scissors"
   } else if (choice == 'paper' && comp == 'scissors') {
-    console.log('scissors beats paper')
+    results = "Your scissors beats Computer's paper"
   } else {
-    console.log('something went wrong')
+    results = 'something went wrong'
   }
-
+  
+  drawPlay()
 }
 
 function compRandomChoice() {
@@ -46,7 +48,6 @@ function compRandomChoice() {
 }
 
 function drawPlay() {
-  let compChoiceElem = document.getElementById("comp-play").innerHTML
-  
-
+  let yourPlayElem = document.getElementById("results")
+  yourPlayElem.innerText = results
 }
