@@ -24,16 +24,22 @@ function compareChoice(choice, comp) {
     results = 'its a tie'
   } else if (choice == 'paper' && comp == 'rock') {
     results = "Your paper beats Computer's rock"
+    // alert("You Win!")
   } else if (choice == 'scissors' && comp == 'rock') {
-    results = "Your rock beats Computer's scissors"
+    results = "Computer's rock beats your scissors"
+    // alert("You lose -_-'")
   } else if (choice == 'rock' && comp == 'paper') {
-    results = "Your paper beats Computer's rock"
-  } else if (choice == 'scissor' && comp == 'paper') {
+    results = "Computer's paper beats your rock"
+    // alert("You lose -_-'")
+  } else if (choice == 'scissors' && comp == 'paper') {
     results = "Your scissors beats Computer's paper"
+    // alert("You Win!")
   } else if (choice == 'rock' && comp == 'scissors') {
     results = "Your rock beats Computer's scissors"
+    // alert("You Win!")
   } else if (choice == 'paper' && comp == 'scissors') {
-    results = "Your scissors beats Computer's paper"
+    results = "Computer's scissors beats your paper"
+    // alert("You lose -_-'")
   } else {
     results = 'something went wrong'
   }
